@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Float left</title>
+        <style>
+            .whateverItIs {
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="whateverItIs"></div>
+        <div class="whateverItIs__box" id="whateverItIs">
+            <label for="whateverItIs" class="whateverItIs__label"
+                >say whatever it is...</label
+            >
+            <textarea
+                name="whateverItIs"
+                type="text"
+                class="whateverItIs__whateverItIs"
+            ></textarea>
+            <button
+                class="whateverItIs__float-away"
+                type="button"
+                onClick="floatLeft()"
+            >
+                ...and float it left
+            </button>
+        </div>
+
+        <script>
+            const floatLeft = () => {
+                document.getElementById('whateverItIs').style.left = '-300px';
+            };
+        </script>
+    </body>
+</html>
